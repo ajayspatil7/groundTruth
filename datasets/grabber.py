@@ -4,8 +4,14 @@ import api_sessions
 import requests
 import os
 
+# 1. URL infos
+mapVer = "v1"
+dim = "2dtiles"
+zoom = 15
+x = 6294
+y = 13288
 
-baseURL = "https://tile.googleapis.com/v1/2dtiles/15/6294/13288"
+baseURL = f"https://tile.googleapis.com/{mapVer}/{dim}/{zoom}/{x}/{y}"
 
 querys = {
     "key": api_sessions.API_KEY,
